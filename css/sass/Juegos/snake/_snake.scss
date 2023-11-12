@@ -1,0 +1,57 @@
+reestart {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.pagina-snake{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.wrapper {
+  justify-content: center;
+  align-items: center;
+    margin-top: 30px;
+  width: 75vmin;
+  height: 80vmin;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #293447;
+  .detalles-juego {
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tablero {
+    width: 100%;
+    height: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    .comida {
+      background: #ff003d;
+    }
+    .vibora {
+   
+      background: #60cbff;
+    }
+  }
+}
+#snake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+  h1{
+    font-size: 70px;
+    color: #212837;
+  }
+}
+}

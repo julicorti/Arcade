@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="shortcut icon" href="../image/logo-2.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/sass/estilos.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+  </head>
+  <body id="bodyI" >
+    
+    <div class="container-login">
+   
+      <div class="caja-login">
+        <h1>Log In</h1>
+    <div class="form">
+      <!-- Email  -->
+      <div class="contenido">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Escribe tu Mail"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="contenido">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Contraseña"
+        />
+      </div>
+      <div class="contenido">
+        <label for="user">Username</label>
+        <input
+          type="user"
+          name="user"
+          id="user"
+          placeholder="Usuario"
+        />
+      </div>
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signIn()">Sign In</button>
+    </div>
+  </div>
+  </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+h1 {
+  text-align: center;
+}
+
+:root {
+  --color-primario: rgb(255, 255, 255);
+
+  --line-style: 5px solid var(--color-primario);
+  --font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.body-tateti {
+  background-color: rgb(0, 0, 0);
+
+  user-select: none; /* Para no seleccionar el texto de toda la pagina */
+}
+.main-tateti {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#reiniciar {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #099fff;
+  color: white;
+  padding: 20px;
+  width: 10vw;
+  height: 8vh;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #00ffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.288);
+  cursor: default;
+  transition: all 400ms ease;
+  &:hover {
+    box-shadow: 5px 5px 20px gray;
+    transform: translateY(-3%);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 4rem;
+  color: var(--color-primario);
+}
+h2 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+.contenedor-tateti {
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+
+  .container-game {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 550px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-row: 1/3;
+    justify-content: center;
+    align-items: center;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(
+        45deg,
+        #e6fb04,
+        #ff6600,
+        #00ff66,
+        #00ffff,
+        #ff00ff,
+        #ff0099,
+        #6e0dd0,
+        #ff3300,
+        #099fff
+      );
+      background-size: 400%;
+      width: calc(100% + 5px);
+      height: calc(100% + 5px);
+      z-index: -1;
+      animation: animate 20s linear infinite;
+    }
+    .grilla {
+     
+      color: var(--color-primario);
+      height: 184px;
+      width: 183px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 8rem;
+      transition: 50ms ease-in-out;
+    }
+    .arriba {
+      border-bottom: var(--line-style);
+    }
+
+    .medio {
+      border-left: var(--line-style);
+      border-right: var(--line-style);
+    }
+
+    .abajo {
+      border-top: var(--line-style);
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+::after {
+  filter: blur(40px);
+}
+@media (width: 1366px) {
+  #reiniciar {
+    width: 15vw;
+    position: relative;
+    top: -20px;
+  }
+}
+@media (max-width: 820px) {
+
+    .contenedor-tateti {
+    
+      .container-game{
+        width: 400px;
+        .grilla{
+          width: 133px;
+        }
+      }
+      #reiniciar {
+        width: 40vw;
+        position: relative;
+        top: -20px;
+      }
+    }
+  
+}
+@media (max-width: 390px) {
+
+  .contenedor-tateti {
+  
+    .container-game{
+      height: 400px;
+      width: 350px;
+      .grilla{
+        width: 116px;
+       height: 134px;
+      }
+    }
+    #reiniciar {
+      width: 40vw;
+      height: 10vh;
+      position: relative;
+      top: -20px;
+    }
+  }
+
+}

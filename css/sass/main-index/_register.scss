@@ -1,0 +1,222 @@
+/* Login */
+
+a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.contenedor {
+  font-family: Poppins, sans-serif;
+  position: relative;
+  background: url("/image/login-fotos/fondito.jpg") no-repeat center top;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+
+  span {
+    a {
+      font-size: 15px;
+    }
+  }
+  &::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    backdrop-filter: blur(14px);
+  }
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 60vh;
+    -webkit-box-shadow: -1px -1px 26px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -1px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -1px 26px 0px rgba(0, 0, 0, 0.75);
+
+    background: rgba(0, 0, 0, 0.849);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 7px;
+
+    #submit-btn {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      height: 40px;
+      margin-top: 50px;
+      background: #b80f22;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 20px;
+      &:hover {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+      }
+    }
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  h1 {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 20px;
+    &::before {
+      color: #fff;
+    }
+  }
+  a {
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+}
+
+.login-box input[type="email"] {
+  border: none;
+  width: 20vw;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+@media (max-width: 430px) {
+  .contenedor {
+    .login-box {
+      h1{
+        font-size: 35px;
+      }
+      height: 50vh;
+      width: 100%;
+      input[type="email"] {
+        width: 70vw;
+      }
+    }
+  }
+.contenedor-inicio{
+  #animation{
+
+    img{
+      width:80vw;
+    }
+  }
+}
+}
+@media (max-width: 784px) {
+  .contenedor {
+    .login-box {
+      h1{
+        font-size: 35px;
+      }
+      height: 60vh;
+      width:100%;
+      input[type="email"] {
+        width: 50vw;
+      }
+    }
+  }
+
+}
+
+/* @media (max-width: 430px) {
+  .contenedor-inicio{
+    #animation{
+      img{
+
+        width:80%;
+      }
+      .boton{
+        width: 40vw;
+        height: 8vh;
+        font-size: 20px;
+      }
+    }
+  }
+} */
+@media (max-width: 784px) {
+  .contenedor-inicio{
+    #animation{
+      img{
+
+        width:70vw;
+      }
+      .boton{
+        width: 30vw;
+        border-radius: 15px;
+        height: 7vh;
+        font-size: 30px;
+      }
+    }
+}
+}
+@media (max-width:430px) {
+  .contenedor-inicio{
+    #animation{
+      img{
+
+        width:80%;
+      }
+      .boton{
+        width: 60vw;
+        height: 8vh;
+        font-size: 20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../image/logo-2.webp" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+  "
+    />
+    <link rel="stylesheet" href="../css/sass/estilos.css" />
+     <!-- Libreria icon -->
+     <link
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+   <script
+     src="https://kit.fontawesome.com/41bcea2ae3.js"
+     crossorigin="anonymous"
+   ></script>
+   
+  </head>
+  
+  <body >
+      
+      <header>
+        <div class="icon__menu">
+          <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+          
+     
+        <div class="usuario">
+      
+          <p>Usuario: <span id="username"></span></p>
+        </div>
+      </header>
+  
+      <div class="menu__side" id="menu_side">
+        <div class="name__page">
+          <i class="bx bx-game"></i>
+          <h4>Arcade</h4>
+        </div>
+  
+        <div class="options__menu">
+          <a href="/page/juegos.html" class="selected">
+            <div class="option">
+              <i class="fas fa-home" title="Inicio"></i>
+              <h4>Inicio</h4>
+            </div>
+          </a>
+  
+          <a href="/page/juegos.html#juegos">
+            <div class="option">
+              <i class="bx bxs-joystick" title="Juegos"></i>
+              <h4>Juegos</h4>
+            </div>
+          </a>
+  
+          <a href="../page/Perfil.html">
+            <div class="option">
+              <i class="far fa-id-badge" title="Contacto"></i>
+              <h4>Perfil</h4>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="option">
+              <i class='bx bx-left-arrow-alt'></i>
+              <h4>LogOut</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+  
+
+    <main>
+      <div class="triangulo">
+      </div>
+      <div class="contenedor-juegos">
+        <div class="caja">
+        <h1>Juegos</h1>
+      </div>
+        <video id="video" autoplay loop muted ><source src="../image/video/vecteezy_neon-game-controller-for-video-games-on-black-background_2014401.mp4"></video>
+        
+  
+   </div>
+   <div id="juegos" class="juegos">
+    <div class="cont-jueguitos">
+      <section>
+        <img onclick="href('./tateti.html')" src="../image/img-juegos/tateti.png" alt="">
+        <img onclick="href('./snake.html')" src="../image/img-juegos/snake.png" alt="">
+        <img onclick="href('./dino.html')" src="../image/dino/dino.jpg" alt="">
+        
+        <img onclick="href('./buscaMinas.html')" src="../image/img-juegos/buscaminas-2.webp" alt="">
+        <img onclick="href('./topo.html')" src="../image/Topo/topo-fondo.png" alt="">
+        <img onclick="href('./ahorcado.html')" src="../image/Ahorcado/ahorcado.PNG" alt="">
+        <img onclick="href('./ahorcado.html')" src="../image/img-juegos/memoryTest.jpg" alt="">
+      </section>
+    </div>
+   </div>
+  </main>
+    <script>
+
+      const href = dir =>{
+        window.location = dir
+      }
+      var nombre = localStorage.getItem("username");
+      
+
+      document.getElementById("username").textContent = nombre;
+      
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+     "></script>
+  
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+<html></html>

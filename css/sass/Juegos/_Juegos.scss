@@ -1,0 +1,122 @@
+.usuario{
+  font-size: 40px;
+font-weight: 700;
+}
+
+.contenedor-juegos {
+  height: 92.4vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  #video{
+    object-fit: cover;
+    width: calc(90% - 80px);
+   
+   z-index: 1;
+    height: 90vh;
+    position: absolute;
+    filter: blur(10px);
+  }
+  .caja{
+    height: 30vh;
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(102, 102, 102, 0.123);
+    z-index: 2;
+    h1 {
+      font-size: 100px;
+     
+    }
+  }
+ 
+}
+.juegos {
+ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(5, 5, 6);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 6, 1) 0%,
+    rgba(15, 16, 22, 1) 7%,
+    rgba(32, 34, 43, 1) 100%
+  );
+  .cont-jueguitos{
+    height: 60vh;
+    width: 70vw;
+    
+    -webkit-box-shadow: 0px -1px 61px 8px rgba(78, 77, 77, 0.75);
+    -moz-box-shadow: 0px -1px 61px 8px rgba(70, 68, 68, 0.75);
+    box-shadow: 0px -1px 61px 8px rgba(36, 35, 35, 0.75);
+    section{
+      gap: 5px;
+        height: 60vh;
+        width: 70vw;
+        background-color: rgb(71, 73, 75);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.13);
+display: flex;
+img{
+  object-fit: cover;
+    width: 0px;
+    flex-grow: 1;
+    opacity: .8;
+    transition: .5s ease; 
+    filter: brightness(0.5);
+    &:hover{
+      filter: brightness(1);
+        cursor: pointer;
+        width: 200px;
+       
+
+    }
+}
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  header{
+  
+    .usuario{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      p{
+        font-size: 30px;
+      }
+    }
+  }
+.contenedor-juegos{
+  .caja{
+    width: 100%;
+  }
+}
+.juegos{
+  .cont-jueguitos{
+    width: 100%;
+   
+    section{
+      width: 100%;
+     
+    }
+  }
+}
+}
+@media (max-width: 1024px) {
+  .contenedor-juegos{
+    .caja{
+      width: 100%;
+    }
+  }
+}

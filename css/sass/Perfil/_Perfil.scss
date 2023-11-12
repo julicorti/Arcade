@@ -1,0 +1,250 @@
+button {
+  border-radius: 40px solid black;
+  font-size: 30px;
+  width: 4vw;
+  height: 3vh;
+}
+.contenedorP {
+  flex-wrap: wrap;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  height: 90vh;
+
+  width: 100%;
+  .usuario-p {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    h1 {
+      font-family: Poppins, sans-serif;
+      font-size: 100px;
+    }
+    .contenidoP {
+      width: 60vw;
+      border-radius: 10px;
+      display: flex;
+      text-align: center;
+      cursor: pointer;
+      justify-content: center;
+      flex-direction: row;
+      height: 70vh;
+
+      padding: 30px;
+      background-color: rgb(255, 255, 255);
+      .todoElCont {
+        .circulo {
+          clip-path: circle(15.9% at 5% 6%);
+          width: 100vw;
+          height: 100vh;
+          background: rgb(70, 144, 187);
+          position: absolute;
+          z-index: -1;
+          bottom: 0;
+          right: 0;
+        }
+        display: flex;
+        background: rgba(0, 0, 0, 0.171);
+        height: 65vh;
+        border-radius: 10px;
+        width: 35vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 50px;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+  .personajes {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 15px;
+    width: 50vh;
+
+    #imgs {
+      border-radius: 10px;
+      box-shadow: 0 0 5px grey;
+      background: rgba(99, 99, 99, 0.26);
+      position: absolute;
+      bottom: -15px;
+
+      width: 20vw;
+      img {
+        height: 70px;
+        border-radius: 60px;
+      }
+    }
+    #avatar {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .contenedorP {
+    .usuario-p {
+      .contenidoP {
+        width: 70vw;
+        height: 70vh;
+        .personajes {
+         
+          position: relative;
+          left: 20px;
+          #imgs {
+            width: 25vw;
+            img {
+              height: 48px;
+              border-radius: 60px;
+            }
+          }
+        }
+      }
+      .todoElCont {
+        p {
+          flex-wrap: wrap;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .contenedorP {
+    height: 100vh;
+    .usuario-p {
+        width: 100%;
+
+      .contenidoP {
+        min-height: 867px;
+        max-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        .personajes {
+          position: absolute;
+          top: 144px;
+          left: 50vw;
+
+          flex-wrap: wrap;
+          width: 0vw;
+          #imgs {
+            position: absolute;
+            top: 200px;
+            width: 70vw;
+            height: 35vh;
+            background-color: rgba(126, 124, 124, 0.5);
+            backdrop-filter: blur(4px);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            
+            &.hidden {
+              display: none;
+            }
+          }
+
+         
+        }
+        .todoElCont {
+          margin-top: 50px;
+          height: 80%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 50px;
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+/* @media (max-width: 375px) {
+  .contenedorP {
+    height: 100vh;
+    
+    .usuario-p {
+      width: 100%;
+      
+      .contenidoP {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        .personajes {
+          position: absolute;
+          top: -550px;
+          left: 230px;
+
+          flex-wrap: wrap;
+          width: 10vw;
+          #imgs {
+            position: absolute;
+            top: 135px;
+            right: 118px;
+            width: 70vw;
+            height: 42vh;
+            background-color: rgba(126, 124, 124, 0.5);
+            backdrop-filter: blur(4px);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 12vw;
+            
+            }
+            &.hidden {
+              display: none;
+            }
+          }
+
+          #avatar {
+            width: 40vw;
+            height: 20vh;
+            position: absolute;
+            left: -285px;
+          }
+        }
+        .todoElCont {
+       
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 50px;
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+} */

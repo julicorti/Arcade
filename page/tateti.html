@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sass/estilos.css">
+    <link rel="shortcut icon" href="../image/logo-2.webp" type="image/x-icon" />
+    <link
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+   <script
+     src="https://kit.fontawesome.com/41bcea2ae3.js"
+     crossorigin="anonymous"
+   ></script>
+   
+    <title>Tateti</title>
+</head>
+<header>
+    <div class="icon__menu">
+      <i class="fas fa-bars" id="btn_open"></i>
+    </div>
+  </header>
+
+  <div class="menu__side" id="menu_side">
+    <div class="name__page">
+      <i class="bx bx-game"></i>
+      <h4>Arcade</h4>
+    </div>
+
+    <div class="options__menu">
+      <a href="../page/juegos.html" class="selected">
+        <div class="option">
+          <i class="fas fa-home" title="Inicio"></i>
+          <h4>Inicio</h4>
+        </div>
+      </a>
+
+      <a href="/page/juegos.html#juegos">
+        <div class="option">
+          <i class="bx bxs-joystick" title="Juegos"></i>
+          <h4>Juegos</h4>
+        </div>
+      </a>
+
+      <a href="../page/Perfil.html">
+        <div class="option">
+          <i class="far fa-id-badge" title="Contacto"></i>
+          <h4>Perfil</h4>
+        </div>
+      </a>
+      <a href="../index.html">
+        <div class="option">
+          <i class='bx bx-left-arrow-alt'></i>
+          <h4>LogOut</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+<body>
+   
+    <main class="main-tateti">
+        
+        <div class="contenedor-tateti">
+            <h1>Tateti</h1>
+        <div class="container-game">
+            <div class="grilla arriba"></div>
+            <div class="grilla arriba medio"></div>
+            <div class="grilla arriba"></div>
+            <div class="grilla"></div>
+            <div class="grilla medio"></div>
+            <div class="grilla"></div>
+            <div class="grilla abajo izquierda"></div>
+            <div class="grilla abajo medio"></div>
+            <div class="grilla abajo"></div>
+          </div>
+          
+          <button id="reiniciar">Reiniciar</button>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/tateti/tateti.js" defer></script>
+    <script src="../js/script.js"></script>
+ 
+</body>
+</html>
